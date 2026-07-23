@@ -1329,15 +1329,12 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        // Resume Modal Handling
         const resumeBtn = document.getElementById('resume-download-btn');
-        const resumeModal = document.getElementById('resume-modal');
-        const closeModal = document.getElementById('close-modal');
 
-        resumeBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            resumeModal.classList.remove('opacity-0', 'pointer-events-none');
-        });
+resumeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.open("Umer_Takildar_Resume.pdf", "_blank");
+});
         closeModal.addEventListener('click', () => {
             resumeModal.classList.add('opacity-0', 'pointer-events-none');
         });
